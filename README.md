@@ -1,21 +1,19 @@
-[![GitHub Repo stars](https://img.shields.io/github/stars/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被星标&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/stargazers "已被星标")
-[![GitHub forks](https://img.shields.io/github/forks/LOWERTOP/Shadowrocket?style=flat&logo=github&logoColor=white&label=已被复刻&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/forks "已被复刻")
-[![GitHub last commit](https://img.shields.io/github/last-commit/LOWERTOP/Shadowrocket/main?style=flat&logo=github&label=更新时间&labelColor=grey&color=blue)](https://github.com/LOWERTOP/Shadowrocket/activity "更新记录")
 [![Translate to English](https://img.shields.io/static/v1?label=Translate&message=to%20English&color=blue&logo=googletranslate&logoColor=white&labelColor=grey&messageColor=white)](https://translate.google.com/translate?hl=en&sl=zh-CN&tl=en&u=https://github.com/LOWERTOP/Shadowrocket/wiki "Google Translate")
 
 [![Shadowrocket](https://socialify.git.ci/LOWERTOP/Shadowrocket/image?custom_description=%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C%0AUser+Manual&description=1&font=Rokkitt&logo=https%3A%2F%2Fraw.githubusercontent.com%2FLOWERTOP%2FShadowrocket-First%2Frefs%2Fheads%2Fmain%2Fimg%2FShadowrocket.png&name=1&pattern=Plus&theme=Light)](https://github.com/LOWERTOP/Shadowrocket "仓库地址")
 
-本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表文件为基础进行完善更新，包含软件多数功能的介绍和部分常见问题及解答，本文及相关软件在使用时请通过合法的互联网出入口信道访问，并确保在使用过程中符合当地法律法规。本仓以普通用户的身份对原作者及所有为相关项目做出贡献的人表示由衷的感谢！其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
+> [!NOTE]
+> 
+> 本使用手册以 **[Shadowrocket 官方群组](https://t.me/ShadowrocketApp)** 使用的关键词列表文件为基础进行完善更新，包含软件多数功能的介绍和部分常见问题及解答。本仓非官方仓库，仅由社区进行维护，本仓对原作者及所有为相关项目做出贡献的人表示由衷的感谢！请确保在使用本文及相关软件的过程中符合当地法律法规。其他使用需求可尝试查看 **[配色与配置仓库](https://github.com/LOWERTOP/Shadowrocket-First)**
 
 > [!TIP]
 > 
-> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf "含策略组版本")** <br>
+> **[懒人配置](https://lowertop.github.io/Shadowrocket/lazy_group.conf "含策略组版本")** 是专为 Shadowrocket 打造的开箱即用的配置文件，首发于 [官方群组](https://t.me/ShadowrocketApp)。该配置文件优化了各项设置并包含了详细的参数说明，可在纯文本模式下查阅<br>
 > ```ruby
 > https://lowertop.github.io/Shadowrocket/lazy_group.conf
 > ```
-> 懒人配置是专为 Shadowrocket 打造的开箱即用的配置文件，首发于 [官方群组](https://t.me/ShadowrocketApp)。该配置文件优化了各项设置并内置了常用的规则/规则集以及常用的代理分组/策略组，同时包含详细的参数说明，可在纯文本模式下详细查阅，适合几乎任何阶段的用户使用
 > 
-> 本仓与官方群组发布的版本同步更新，[Johnshall](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 的版本也与本仓保持同步。对新手用户而言更推荐 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本
+> 本仓与官方群组发布的版本同时更新，[Johnshall](https://github.com/Johnshall/Shadowrocket-ADBlock-Rules-Forever) 的版本也与本仓保持同步。对新手用户而言更推荐 [访问官方群组](https://t.me/ShadowrocketApp) 使用离线版本
 
 ------
 
@@ -105,7 +103,7 @@
 > * [设置](#设置页面)
 >     * [延迟测试方法](#延迟测试方法)
 >     * [小组件](#小组件)
->     * [颜色](#颜色)
+>     * [外观](#外观)
 >     * [按需求连接](#按需求连接)
 >     * [隧道](#隧道)
 >     * [兼容模式](#兼容模式)
@@ -114,6 +112,7 @@
 >     * [代理类型](#代理类型)
 >     * [开启UDP转发](#开启udp转发)
 >     * [禁用STUN](#禁用stun)
+>     * [Tailscale](#tailscale)
 >     * [权限](#权限)
 >     * [隐藏VPN图标](#隐藏vpn图标)
 >     * [GEOIP数据库](#geoip数据库)
@@ -193,7 +192,7 @@
 
 > 现阶段正式版软件及测试版软件已支持的协议类型
 > 
-> > **Subscribe（订阅）、Shadowsocks、ShadowsocksR、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、AnyTLS、TUIC、Juicity、SSH、WireGuard、Snell v1-3、Mieru、OpenConnect、TrustTunnel、Brook、Lua**
+> > **Subscribe（订阅）、Shadowsocks、ShadowsocksR、Vmess、VLESS、Relay、Socks5、Socks5 Over TLS、HTTP、HTTPS、HTTP2、Trojan、Hysteria、Hysteria2、AnyTLS、TUIC、Juicity、SSH、WireGuard、Snell、Mieru、OpenConnect、TrustTunnel、Brook、Lua**
 >
 > 当前版本支持的协议可在 **首页 > 右上角 `➕` > 类型** 中查看
 >
@@ -221,7 +220,7 @@
 
 > * 设置 > 订阅 > 根据 `Ping` 排序
 > 
-> 该操作支持节点按照延迟测试后得到的延迟数值进行由低到高的自动排序
+> 根据节点延迟测试结果由低到高自动排序
 
 ### [节点分享与整理](#使用目录)
 
@@ -231,11 +230,12 @@
 > > 
 > > * 左滑节点 > 二维码，其他设备可以通过扫码添加节点（二维码页面点击右上角的 **分享** 按钮，可以选择其他形式传送二维码）
 > > 
-> >   _节点二维码缺乏统一标准。当使用其他代理工具扫码添加某些节点时，可能会丢失部分节点信息，导致不能连接。如果遇到此问题，请仔细检查同一个节点的各项配置信息是否一致_
-> > 
 > > * 点击节点后面的 `ⓘ` 图标，滑动至页面底部，有多种分享节点的菜单
 > > 
 > > * 展开节点列表，点击连通性测试下方的编辑按钮 `•••`，勾选需要分享的节点，点击左上角的 **复制**，可以把多个节点链接同时分享给其他设备
+> > 
+> >   **_节点二维码及 URL 缺乏统一标准，Shadowrocket 的节点分享仅代表可以分享给其他终端的 Shadowrocket。当使用其他代理工具扫码添加由 Shadowrocket 导出的某些节点时，可能会丢失部分节点信息，导致不能连接。如果遇到此问题，请仔细检查同一个节点的各项配置信息是否一致_**
+> > 
 > 
 > **节点整理**
 > 
@@ -510,7 +510,7 @@
 
 ### [通用参数](#使用目录)
 
-> 通用参数是 Shadowrocket 的中最重要的功能参数，位于 [配置文件](#配置文件) [纯文本编辑](#编辑纯文本) 模式中的 `[General]` 字段，该字段选项包含具有 UI 界面的设置项和不包含 UI 界面的 [隐式参数](#隐式参数)
+> 通用参数是 Shadowrocket 中最重要的功能参数，位于 [配置文件](#配置文件) [纯文本编辑](#编辑纯文本) 模式中的 `[General]` 字段，该字段选项包含具有 UI 界面的设置项和不包含 UI 界面的 [隐式参数](#隐式参数)
 > 
 > > * **UI 编辑**：点击配置文件的 `ⓘ` 图标 > 通用
 > > * **文本编辑**：点击配置文件 > 编辑纯文本 > `[General]`
@@ -522,9 +522,10 @@
 > > key = value
 > > ```
 > 
-> **旁路系统 `bypass-system`**
+> **~~旁路系统 `bypass-system`~~**
 > 
-> > 如果禁用此选项，可能会导致一些系统问题，如推送通知延迟
+> > ~~如果禁用此选项，可能会导致一些系统问题，如推送通知延迟~~<br>
+> > * 本选项仅存在于特定软件版本之前，现阶段或已弃用
 > 
 > **跳过代理 `skip-proxy`**
 > 
@@ -621,7 +622,7 @@
 >
 > **`proxy-dns-server`**
 >
-> > 通过该参数来使用特定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
+> > 使用指定 DNS 解析所有节点域名。若未设置此参数，节点域名默认使用 [dns-server](#修改dns) 进行解析，对于 [DNS-over-PROXY](#dns-over-proxy) 则使用系统 DNS 解析
 > 
 > **`close-if-proxy-chain-missing`**
 > 
@@ -641,8 +642,12 @@
 > 
 > **`allow-dns-svcb`**
 > 
-> > 允许 DNS SVCB 查询。系统可能会执行 SVCB 记录 DNS 查询，而不是标准的 A 记录查询。这会导致无法返回虚拟 IP 地址。因此，默认情况下禁止执行 SVCB 记录查询，以强制系统执行 A 记录查询。设置为 `true` 表示启用，设置为 `false` 表示不启用
+> > 允许 DNS SVCB 查询。系统可能会执行 SVCB 记录 DNS 查询，而不是标准的 A 记录查询。这会导致无法返回虚拟 IP 地址。因此，默认情况下禁止执行 SVCB 记录查询，以强制系统执行 A 记录查询。设置为 `true` 表示启用，默认设置为 `false` 表示不启用。该命令会控制 HTTPS 和 SVCB
 >
+> **`allow-dns-all`**
+>
+> > 允许所有 DNS 查询类型正常转发。该命令设置为 `true` 时，A/AAAA 查询返回 Fake-IP，其余查询将正常转发至上游 DNS。设置为 `false` 时，除 A/AAAA 外的 HTTPS、SVCB、TXT 等 DNS 查询会被返回空值。软件默认为开启状态
+> 
 > _Shadowrocket 或还有其他支持的隐式参数，此处可能未能完全列出，若有相关需求请联系 [buginapp@gmail.com](mailto:buginapp@gmail.com)_
 
 ### [添加规则](#使用目录)
@@ -682,7 +687,7 @@
 > 
 > **DOMAIN-WILDCARD**：匹配请求域名，支持使用通配符 `*`、`?`
 > 
-> > 如 `DOMAIN-WILDCARD,a*c.example*.com,DIRECT` 可以匹配到 `abc.example123.com、aqwec.example456.com`
+> > 如 `DOMAIN-WILDCARD,a*c.example*.com,DIRECT` 可以匹配到 `abc.example123.com`、`aqwec.example456.com`
 > 
 > **DOMAIN**：匹配请求的完整域名。当为`DOMAIN`、`DOMAIN-SUFFIX`、`DOMAIN-KEYWORD` 等相似类型分别设置相同的值时，只有其中一种类型会生效
 > 
@@ -745,6 +750,8 @@
 > 
 > **DIRECT**：直连。连接不经过任何代理服务器
 > 
+> **TAILSCALE**：Tailscale 出口。通过 [Tailscale](#tailscale) 隧道转发
+> 
 > **REJECT**：拒绝。返回 HTTP 状态码 404，没有内容
 > 
 > **REJECT-DICT**：拒绝。返回 HTTP 状态码 200，内容为空的JSON对象
@@ -755,7 +762,7 @@
 > 
 > **REJECT-IMG**：拒绝。返回 HTTP 状态码 200，内容为 1 像素 GIF
 > 
-> **REJECT-TINYGIF**：拒绝。返回HTTP状态码200，内容为 1 像素 GIF
+> **REJECT-TINYGIF**：拒绝。返回 HTTP 状态码200，内容为 1 像素 GIF
 > 
 > **REJECT-DROP**：拒绝。丢弃 IP 包
 > 
@@ -840,7 +847,7 @@
 >
 > **proxy**
 > 
-> > 支持使用 **默认节点** 转发 DNS 查询请求，有以下两种写法：
+> > 使用 **默认节点** 转发 DNS 查询请求，有以下两种写法：
 > > 
 > > ```ruby
 > > dns-server=https://dns.google/dns-query#proxy
@@ -851,7 +858,7 @@
 > 
 > **proxy=name**
 > 
-> > 支持使用 **指定节点** 转发 DNS 查询请求，需要注意此处的代理名称仅支持 URL 编码，以 `香港 01` 示例：
+> > 使用 **指定节点** 转发 DNS 查询请求，需要注意此处的代理名称仅支持 URL 编码，以 `香港 01` 示例：
 > > ```ruby
 > > dns-server=https://dns.google/dns-query#proxy=%E9%A6%99%E6%B8%AF%2001
 > > ```
@@ -966,7 +973,7 @@
 
 > 配置 > 点击配置文件 > 编辑配置 > 复制
 > 
-> 点击该选项可将当前配置生成一份备份并命名为 `*-copy.conf`
+> 复制当前配置并生成新的配置文件，默认命名为 `*-copy.conf`
 
 ### [替换策略](#使用目录)
 
@@ -982,11 +989,11 @@
 > 
 > 配置 > 点击配置文件 > 编辑配置 > 测试规则
 > 
-> * 基于当前配置进行规则策略测试
+> * 根据当前配置测试指定请求的匹配规则及最终策略
 
 ### [Hosts](#使用目录)
 
-> Shadowrocket 支持本地自定义 DNS 映射。包含 **本地值** 和 **DNS服务器** 两种设定方式。在 [纯文本编辑](#编辑纯文本) 模式中位于 [配置文件](#配置文件) 的 `[Host]` 字段。在默认情况下，对于代理类的 DNS 解析始终在远端服务器上执行，支持使用 `use-local-host-item-for-proxy` 等 [隐式参数](#隐式参数)
+> Hosts 用于自定义域名解析结果或指定 DNS 服务器。包含 **本地值** 和 **DNS服务器** 两种设定方式。在 [纯文本编辑](#编辑纯文本) 模式中位于 [配置文件](#配置文件) 的 `[Host]` 字段。在默认情况下，对于代理类的 DNS 解析始终在远端服务器上执行，支持使用 `use-local-host-item-for-proxy` 等 [隐式参数](#隐式参数)
 >
 > > * **UI 编辑**：点击配置文件的 `ⓘ` 图标 > Hosts
 > > * **文本编辑**：点击配置文件 > 编辑纯文本 > `[Host]`
@@ -1006,7 +1013,7 @@
 
 ### [头部重写](#使用目录)
 
-> 支持 **请求头/响应头** 重写功能，即标头重写，包含 `del`、`add`、`replace`、`replace-regex` 几种操作。在 [纯文本编辑](#编辑纯文本) 模式中位于 [配置文件](#配置文件) 的 `[Header Rewrite]` 字段
+> **请求头/响应头** 重写功能，即标头重写，包含 `del`、`add`、`replace`、`replace-regex` 几种操作。在 [纯文本编辑](#编辑纯文本) 模式中位于 [配置文件](#配置文件) 的 `[Header Rewrite]` 字段
 >
 > > * **UI 编辑**：点击配置文件的 `ⓘ` 图标 > 头部重写
 > > * **文本编辑**：点击配置文件 > 编辑纯文本 > `[Header Rewrite]`
@@ -1029,7 +1036,7 @@
 
 ### [正文重写](#使用目录)
 
-> 支持 **请求体/响应体** 重写功能，支持使用 `jq` 语法。在 [纯文本编辑](#编辑纯文本) 模式中位于 [配置文件](#配置文件) 的 `[Body Rewrite]` 字段
+> **请求体/响应体** 重写功能，支持使用 `jq` 语法。在 [纯文本编辑](#编辑纯文本) 模式中位于 [配置文件](#配置文件) 的 `[Body Rewrite]` 字段
 >
 > > * **UI 编辑**：点击配置文件的 `ⓘ` 图标 > 正文重写
 > > * **文本编辑**：点击配置文件 > 编辑纯文本 > `[Body Rewrite]`
@@ -1045,7 +1052,7 @@
 
 ### [本地映射](#使用目录)
 
-> 支持 **本地映射** 功能，在 [纯文本编辑](#编辑纯文本) 模式中位于 [配置文件](#配置文件) 的 `[Map Local]` 字段
+> **本地映射** 功能，在 [纯文本编辑](#编辑纯文本) 模式中位于 [配置文件](#配置文件) 的 `[Map Local]` 字段
 >
 > > * **UI 编辑**：点击配置文件的 `ⓘ` 图标 > 本地映射
 > > * **文本编辑**：点击配置文件 > 编辑纯文本 > `[Map Local]`
@@ -1081,14 +1088,15 @@
 > > * 或者在配置文件、模块纯文本模式中的 `[MITM]` 字段中使用 `h2 = true` 表示启用
 > > 
 > > 若模块中包含此命令，则会覆盖配置文件中的相关设置
-> 
-> **HTTPS解密仅对启用此功能的配置文件生效，若切换或更换配置文件需要对新配置文件重新 [开启解密](#https解密)，为避免重复安装证书可使用 [证书模块](#证书模块)**
-> 
-> **若多终端经 iCloud 使用同一个配置文件，需要使用证书 `ⓘ` 图标的复制粘贴功能将同一个证书在多个终端上进行安装信任**
+>
+> **注意**<br>
+> HTTPS解密仅对启用此功能的配置文件生效，若切换或更换配置文件需要重新为新配置文件 [开启解密](#https解密)，为避免重复安装证书可使用 [证书模块](#证书模块)<br>
+> 在安装证书时若提示 `No PKCS12 Certificates`，是因为在未完成解密证书安装并信任的操作前安装了证书模块，请删除相关模块后重试<br>
+> 若多终端经 iCloud 使用同一个配置文件，需要使用证书 `ⓘ` 图标的复制粘贴功能将同一个证书在多个终端上进行安装信任
 
 ### [脚本](#使用目录)
 
-> 使用 JavaScript 拓展 Shadowrocket 的功能，在 [纯文本编辑](#编辑纯文本) 模式中位于 [配置文件](#配置文件) 的 `[Script]` 字段
+> 可通过 JavaScript 脚本实现高级处理逻辑。在 [纯文本编辑](#编辑纯文本) 模式中位于 [配置文件](#配置文件) 的 `[Script]` 字段
 >
 > > * **UI 编辑**：点击配置文件的 `ⓘ` 图标 > 脚本
 > > * **文本编辑**：点击配置文件 > 编辑纯文本 > `[Script]`
@@ -1141,7 +1149,7 @@
 > >   
 > >   可以对模块顺序进行重新排序，并可以选择并批量删除/启用/禁用选定的模块
 > 
-> **备注**
+> **注意**
 > > * 对正在使用的配置 [开启 HTTPS 解密](#https解密) 或使用 [证书模块](#证书模块)，才能使包含 MITM 的模块完整生效，不包含 MITM 的模块除外
 > > * 因模块可能包含不同规则，所以大多数模块仅在 [全局路由](#全局路由区别) 设为配置时生效，不包含规则类的模块除外
 > > * iOS 15 之后，NE的内存限制由 15 MB 增加到了 50 MB，低版本系统可能因内存不足导致 [模块失效](#模块失效) 或 [VPN 自动断开](#vpn自动断开)
@@ -1170,6 +1178,11 @@
 ### [证书模块](#使用目录)
 
 > 在实际使用软件时如果需要切换或更换 [配置文件](#配置文件)，且原配置已开启过 [HTTPS 解密](#https解密)，则需要对新的配置文件重新安装并信任证书，才可使解密继续生效。为免除重复安装 CA 证书，可以选择使用证书模块。证书模块是一组手动添加已生效解密证书的模块，由于模块的优先级高于配置文件，可以使解密状态不受更换配置的影响。其原理参见：[模块](#模块)
+>
+> > **注意**<br>
+> > 请确保已完成解密证书安装并信任操作后，再使用包含证书相关命令的模块<br>
+> > 在解密证书未配置完成时执行此类模块，可能会导致证书安装失败，并显示：`No PKCS12 Certificates`
+> 
 > 
 > * 新建模块：
 > 
@@ -1199,8 +1212,10 @@
 
 ### [编写本地节点](#使用目录)
 
-> Shadowrocket 支持在 [配置文件](#配置文件) 中编写本地节点，但该操作方式仅是为了兼容部分其他类型的配置文件，不能当作 Shadowrocket [添加节点](#添加节点) 的优先选择
+> [!CAUTION]
 > 
+> Shadowrocket 支持在 [配置文件](#配置文件) 中编写本地节点，但该操作方式仅是为了兼容部分其他类型的配置文件，不能当作 Shadowrocket [添加节点](#添加节点) 的优先选择
+
 > **Shadowsocks类型**
 > > 
 > > 节点名称=ss,地址,端口,password=密码,其他参数(如method=aes-256-cfb,obfs=websocket,plugin=none)
@@ -1374,9 +1389,9 @@
 > 
 > > * 系统设置 > 通用 > 语言与地区，添加或删除一种其他语言
 
-### [颜色](#使用目录)
+### [外观](#使用目录)
 
-> 设置 > 颜色
+> 设置 > 外观
 > 
 > Shadowrocket 支持自定义设置软件配色方案，可以根据个人喜好调整各个板块的颜色，并可以随时恢复默认颜色。同时支持分享和安装已有配色方案，配色案例参考 [此处](https://github.com/LOWERTOP/Shadowrocket-First#shadowrocket-%E9%85%8D%E8%89%B2%E6%96%87%E4%BB%B6)
 > 
@@ -1497,7 +1512,7 @@
 > > * 然后按照局域网条件下方法进行设置<br>
 > >   **此处需要注意下操作顺序，原理是连接设备热点后先形成局域网环境，然后按照局域网条件进行设置**
 > >
-> **备注**
+> **注意**
 > > * 当 iOS 设备开启代理共享时，或需保持该设备屏幕常亮或连接充电器，以防意外退出
 > > * 如果配置文件开启了 HTTPS 解密，请确保其他设备已安装并信任相同的证书才能正常使用。当其他设备不需要使用解密功能时，可以在 **代理共享** 页面关闭「HTTPS解密」开关
 > > * 使用代理共享时需要对应的 APP 打开系统设置中的 **本地网络** 开关
@@ -1530,7 +1545,37 @@
 >
 > 若在配置文件 [通用参数](#通用参数) 中使用 `stun-response-ip` 的相关命令，则此处的开关状态将被忽略
 
-### [权限](#权限)
+### [Tailscale](#使用目录)
+
+> Shadowrocket 自版本 **[2.2.89 (3314)](https://t.me/ShadowrocketNews/1527)** 起增加 **[Tailscale](https://tailscale.com/docs)** 全局隧道模组
+> 
+> * **启用**
+>   
+>   启用 Tailscale 作为处理 tailnet 流量的全局模组。当设置变更时数据包 tunnel 将重新加载此模组
+>   
+>   * 启用此功能可配合 Tailscale [规则策略](#规则策略) 添加对应的规则
+>   
+>     示例：`DOMAIN-WILDCARD,tail*.ts.net,TAILSCALE`、`DOMAIN-SUFFIX,ts.net,TAILSCALE`
+>   
+>   * 需要注意 [TUN旁路路由](#通用参数) `tun-excluded-routes` 内若包含 `100.64.0.0/10` 网段可能对 Tailscale 有一定影响，参见 [Tailscale IP 地址](https://tailscale.com/docs/concepts/tailscale-ip-addresses) 以及 [CGNAT 冲突排查](https://tailscale.com/docs/reference/troubleshooting/network-configuration/cgnat-conflicts)
+>   
+> * **认证密钥**
+>   
+>   填写并使用来自 Tailscale 管理控制台的可复用或临时 **[认证密钥](https://tailscale.com/docs/features/access-control/auth-keys)**，使设备无需登录即可加入 Tailscale 网络
+> 
+> * **控制服务器 URL**
+>   
+>   填写 **[控制服务器地址](https://tailscale.com/docs/how-to/set-up-custom-control-server)**，默认使用初始的 Tailscale 控制服务器，其 URL 为 `https://controlplane.tailscale.com`
+>
+> * **出口节点**
+>   
+>   **[出口节点](https://tailscale.com/docs/features/exit-nodes)** 允许将所有互联网流量通过 Tailscale 网络中的某一台设备转发出去再到达公共互联网。Shadowrocket 默认仅处理 tailnet 流量，不使用出口节点
+>
+> * **始终使用 DERP**
+>   
+>   强制通过 **[DERP 中继服务器](https://tailscale.com/docs/reference/derp-servers)** 转发 Tailscale 流量，并禁用直接 UDP 通道
+
+### [权限](#使用目录)
 
 > * **位置**
 >   
@@ -1585,28 +1630,29 @@
 > 
 > * **配置**：根据设置自动 [更新配置](#更新配置) 以及当前所用的 [规则集](#规则集url)、[脚本](#脚本url) 等远程资源。
 > 
->     * 自动后台更新：开启后可根据设置自动更新配置文件
->     * 更新提醒：开启后，更新时会弹出相应提醒。需要开启设备推送通知
->     * 更新间隔：单位为  **天**，可选 1-7 天
+>     * **自动后台更新**：开启后可根据设置自动更新配置文件
+>     * **更新提醒**：开启后，更新时会弹出相应提醒。需要开启设备推送通知
+>     * **更新间隔**：单位为  **天**，可选 1-7 天
 >     * 若当前配置文件是不含更新地址的本地配置文件，则自动更新功能仅会更新当前所用的规则集、脚本等远程资源，参见：[使用配置](#使用配置) / [编译配置](#编译配置)、[规则集URL](#规则集url)、[脚本URL](#脚本url)
 >     * 规则集/脚本资源手动更新方法：点击 [配置文件](#配置文件) > [使用配置](#使用配置) / [编译配置](#编译配置)
 >     * 需要注意：自动更新配置会覆盖自定义设置，参见 [更新配置](#更新配置)
 > 
 > * **模块**：根据设置自动更新远程模块资源
 > 
->     * 自动后台更新：开启后可根据设置自动更新模块
->     * 更新提醒：开启后，更新时会弹出相应提醒。需要开启设备推送通知
->     * 更新间隔：单位为  **天**，可选 1-7 天
+>     * **自动后台更新**：开启后可根据设置自动更新模块
+>     * **更新提醒**：开启后，更新时会弹出相应提醒。需要开启设备推送通知
+>     * **更新间隔**：单位为  **天**，可选 1-7 天
 >   
 > * **订阅**：根据设置自动更新服务器订阅，另外可 [参见此处](#更新订阅节点)
 > 
->     * 自动后台更新：开启后可根据设置自动更新订阅
->     * 更新提醒：开启后，更新时会弹出相应提醒。需要开启设备推送通知
->     * 更新间隔：单位为  **小时**，可选 1-24 小时
->     * DNS：使用指定的 HTTPS DNS 来解析订阅链接的域名，点击右侧的 `ⓘ` 可以挑选内置的 DNS
->     * 根据 PING 排序：以连通性测试的结果从小到大排列服务器节点
->     * 发送 HWID：开启该开关后，Shadowrocket 将在更新订阅时发送 X-HWID 标头
->     * 显示删除确认：连通性测试结束后，显示是否删除超时节点的对话框
+>     * **自动后台更新**：开启后可根据设置自动更新订阅
+>     * **更新提醒**：开启后，更新时会弹出相应提醒。需要开启设备推送通知
+>     * **更新间隔**：单位为  **小时**，可选 1-24 小时
+>     * **DNS**：使用指定的 HTTPS DNS 来解析订阅链接的域名，点击右侧的 `ⓘ` 可以挑选内置的 DNS
+>     * **根据 PING 排序**：以连通性测试的结果从小到大排列服务器节点
+>     * **保持代理通过**：在更新时保持 [代理通过/代理链](#代理通过代理链) 的相关设置
+>     * **发送 HWID**：开启该开关后，Shadowrocket 将在更新订阅时发送 X-HWID 标头
+>     * **显示删除确认**：连通性测试结束后，显示是否删除超时节点的对话框
 > 
 > * **GeoLite2 数据库**：包含自动后台更新选项、更新提醒选项、更新间隔选项，其中更新间隔单位为 **天**。其他设置 [参见此处](#geoip数据库)
 
@@ -1637,7 +1683,7 @@
 > **方法二**
 > > * 点击配置文件的 `ⓘ` 图标 > 代理分组 > 右上角 `➕` > [类型](#代理分组类型) `url-test`
 > 
-> **备注**
+> **注意**
 > > * 如果节点不稳定，可同时 [开启回退](#启用回退)
 
 ### [订阅异常](#使用目录)
